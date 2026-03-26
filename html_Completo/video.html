@@ -1,131 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <header><h1>Pagina completa con html y css</h1></header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+      <h1>Pagina completa con html y css</h1>
+    </header>
     <ul>
-            <li><a href="paginaCompleta.html"> Bordes</a></li>
-            <li><a href="sombras.html"> Sombras</a></li>
-            <li><a href="cajas.html"> Cajas</a></li>
-            <li><a href="Posicion.html"> Posicion</a></li>
-            <li><a href="Transformacion.hmtl"> Transformacion</a></li>
-            <li><a href="Formularios.html"> Formularios</a></li>
-            <li><a href="iframe.html">iframe</a></li>
-            <li><a href="Transiciones.html">Transiciones</a></li>
-            <li><a href="Columnas.html">Columnas</a></li>
-            <li><a href="Video.html">Video</a></li>
-            <li><a href="Audio.html">Audio</a></li>
-            <li><a href="Transparencias.html">Transparencias</a></li>
-            <li><a href="Animacion.html">Animacion</a></li>
-        </ul>
-    </nav>
+      <li><a href="paginaCompleta.html"> Bordes</a></li>
+      <li><a href="sombras.html"> Sombras</a></li>
+      <li><a href="cajas.html"> Cajas</a></li>
+      <li><a href="Posicion.html"> Posicion</a></li>
+      <li><a href="Transformacion.hmtl"> Transformacion</a></li>
+      <li><a href="Formularios.html"> Formularios</a></li>
+      <li><a href="iframe.html">iframe</a></li>
+      <li><a href="Transiciones.html">Transiciones</a></li>
+      <li><a href="Columnas.html">Columnas</a></li>
+      <li><a href="Video.html">Video</a></li>
+      <li><a href="Audio.html">Audio</a></li>
+      <li><a href="Transparencias.html">Transparencias</a></li>
+      <li><a href="Animacion.html">Animacion</a></li>
+    </ul>
+  </nav>
 
-<section class="estilo-pro">
-<h2>Video en HTML</h2>
+  <section class="estilo-pro">
+    <h2>Video en HTML</h2>
 
-<article>
-La etiqueta <b>video</b> permite reproducir videos directamente en una página web sin necesidad de plugins externos.
-</article>
+    <article>
+      La etiqueta <b>video</b> permite reproducir videos directamente en una página web sin necesidad de plugins
+      externos.
+    </article>
 
-<p>
-Atributos principales:
-<br><b>src:</b> ruta del video
-<br><b>controls:</b> muestra controles (play, pausa, volumen)
-<br><b>autoplay:</b> reproduce automáticamente
-<br><b>loop:</b> repite el video
-<br><b>muted:</b> sin sonido
-</p>
+    <p>
+      Atributos principales:
+      <br><b>src:</b> ruta del video
+      <br><b>controls:</b> muestra controles (play, pausa, volumen)
+      <br><b>autoplay:</b> reproduce automáticamente
+      <br><b>loop:</b> repite el video
+      <br><b>muted:</b> sin sonido
+    </p>
 
-</section>
+  </section>
 
-<section class="estilo-pro">
-<h2>Ejemplo básico</h2>
-<hr>
+  <section class="estilo-pro">
+    <h2>Ejemplo básico</h2>
+    <hr>
 
-<video width="400" controls>
-    <source src="videos/YTDown.com_YouTube_CRUZ-CAFUNE-rang-rov-r-r-mix-ft-Mariah-A_Media_4cpr6Bx2XAg_003_480p.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-</video>
+    <video width="400" controls>
+      <source src="videos/YTDown.com_YouTube_CRUZ-CAFUNE-rang-rov-r-r-mix-ft-Mariah-A_Media_4cpr6Bx2XAg_003_480p.mp4"
+        type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
 
-</section>
+  </section>
 
-<section class="estilo-pro">
-<h2>Video automático y en bucle</h2>
+  <section class="estilo-pro">
+    <h2>Video automático y en bucle</h2>
 
-<article>
+    <article>
 
-<video width="400" autoplay loop muted>
-    <source src="videos/YTDown.com_YouTube_Otra-Noche-en-Miami_Media_Fp22B_1Mct8_002_720p.mp4" type="video/mp4">
-</video>
+      <video width="400" autoplay loop muted>
+        <source src="videos/YTDown.com_YouTube_Otra-Noche-en-Miami_Media_Fp22B_1Mct8_002_720p.mp4" type="video/mp4">
+      </video>
 
-</article>
-</section>
+    </article>
+  </section>
 
-<section class="estilo-pro">
-<article>
-<h2>Poster (imagen previa)</h2>
+  <section class="estilo-pro">
+    <article>
+      <h2>Poster (imagen previa)</h2>
 
-<p>
-El atributo <b>poster</b> muestra una imagen antes de reproducir el video.
-</p>
+      <p>
+        El atributo <b>poster</b> muestra una imagen antes de reproducir el video.
+      </p>
 
-<video width="400" controls poster="imagen.jpg">
-    <source src="videos/YTDown.com_YouTube_Jerico-Part-I_Media_y0EhMyTJbB4_002_720p.mp4" type="video/mp4">
-</video>
+      <video width="400" controls poster="imagen.jpg">
+        <source src="videos/YTDown.com_YouTube_Jerico-Part-I_Media_y0EhMyTJbB4_002_720p.mp4" type="video/mp4">
+      </video>
 
-</article>
-</section>
+    </article>
+  </section>
 
-<section class="estilo-pro">
-<article>
-<h2>Ejemplo combinado</h2>
+  <section class="estilo-pro">
+    <article>
+      <h2>Ejemplo combinado</h2>
 
-<video width="400" controls loop poster="imagen.jpg">
-    <source src="videos/YTDown.com_YouTube_Delaossa-Nueva-Season_Media_X3GbxI_wtGQ_003_480p.mp4" type="video/mp4">
-</video>
+      <video width="400" controls loop poster="imagen.jpg">
+        <source src="videos/YTDown.com_YouTube_Delaossa-Nueva-Season_Media_X3GbxI_wtGQ_003_480p.mp4" type="video/mp4">
+      </video>
 
-</article>
-</section>
+    </article>
+  </section>
 
-<!-- Footer -->
-    <footer class="footer-pro">
-
-  <div>
-
+  <!-- Footer -->
+  <footer class="footer-pro">
 
     <div>
-      <h3>Contactame</h3>
+
 
       <div>
-        <i></i>
-        <div>Correo: <a style="color :white"  class="email" href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+        <h3>Contactame</h3>
+
+        <div>
+          <i></i>
+          <div>Correo: <a style="color :white" class="email"
+              href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+        </div>
+        <div>
+          <i></i>
+          <span>+57 314 8040735</span>
+        </div>
       </div>
+
       <div>
-        <i></i>
-        <span>+57 314 8040735</span>
+        <h4>Ubicación</h4>
+        <p>Colegio Mayor del cauca sede bicentenario</p>
+      </div>
+
+      <div>
+
+        <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
       </div>
     </div>
 
-    <div>
-      <h4>Ubicación</h4>
-      <p>Colegio Mayor del cauca sede bicentenario</p>
-    </div>
+  </footer>
 
-    <div>
-
-      <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
-    </div>
-  </div>
-
-</footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

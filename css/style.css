@@ -1,14 +1,14 @@
 @font-face {
     font-family: MyFont;
-    src: url(911porschav3.ttf) format(truetype);
+    src: url(/Fuentes/911porschav3.ttf) format(truetype);
 }
 @font-face {
     font-family: MyFontTwo;
-    src: url(911porschav3bold.ttf) format(truetype);
+    src: url(/Fuentes/911porschav3bold.ttf) format(truetype);
 }
 @font-face {
     font-family: MyFontThree;
-    src: url(911porschav3laserital.ttf) format(truetype);
+    src: url(/Fuentes/911porschav3laserital.ttf) format(truetype);
 }
 body{
     background-color: #e9edc9;
