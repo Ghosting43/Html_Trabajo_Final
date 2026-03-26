@@ -8,7 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <header>
@@ -31,80 +30,58 @@
       <li><a href="storage.html">storage</a></li>
     </ul>
   </nav>
-
   <section class="estilo-pro">
     <h2>Transparencias en CSS</h2>
-
     <article>
       Las transparencias en CSS permiten hacer que los elementos sean parcialmente visibles.
       Se pueden aplicar usando la propiedad <b>opacity</b> o colores con <b>rgba</b>.
     </article>
-
     <p>
       Formas de aplicar transparencia:
       <br><b>opacity:</b> controla la transparencia de todo el elemento
       <br><b>rgba:</b> controla la transparencia del color
     </p>
-
   </section>
-
   <section class="estilo-pro">
     <h2>Ejemplo con opacity</h2>
     <hr>
-
     <div style="background: blue; color:white; padding:20px; opacity: 0.5;">
       Elemento con opacity 0.5
     </div>
-
     <div style="background: red; color:white; padding:20px; opacity: 0.8;">
       Elemento con opacity 0.8
     </div>
-
   </section>
-
   <section class="estilo-pro">
     <h2>Ejemplo con rgba</h2>
-
     <article>
-
       <div style="background: rgba(0,0,255,0.5); color:white; padding:20px;">
         Fondo con transparencia usando rgba
       </div>
-
       <div style="background: rgba(255,0,0,0.3); color:black; padding:20px;">
         Fondo rojo transparente
       </div>
-
     </article>
   </section>
-
   <section class="estilo-pro">
     <article>
       <h2>Diferencia importante</h2>
-
       <p>
         <b>opacity</b> afecta todo el elemento (incluyendo texto).<br>
         <b>rgba</b> solo afecta el fondo.
       </p>
-
       <div style="background: green; color:white; padding:20px; opacity:0.5;">
         Texto también transparente (opacity)
       </div>
       <br>
-
       <div style="background: rgba(0,128,0,0.5); color:white; padding:20px;">
         Texto normal (rgba)
       </div>
-
     </article>
   </section>
-
   <!-- Footer -->
   <footer class="footer-pro">
-
     <div>
-
-
       <div>
         <h3>Contactame</h3>
 
@@ -123,15 +100,11 @@
         <h4>Ubicación</h4>
         <p>Colegio Mayor del cauca sede bicentenario</p>
       </div>
-
       <div>
-
         <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
       </div>
     </div>
-
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
