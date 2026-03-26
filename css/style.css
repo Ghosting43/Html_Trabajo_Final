@@ -77,3 +77,14 @@ h1,h2,h3,h4{
 span{
     font-family: MyFontThree;
 }
+a{
+    font-family: MyFontTwo;
+    color: coral;
+    text-decoration: none;
+}
+a:hover{
+    color: goldenrod;
+}
+a:visited{
+    color: red;
+}
