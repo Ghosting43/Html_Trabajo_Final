@@ -10,6 +10,10 @@
     font-family: MyFontThree;
     src: url(/Fuentes/911porschav3laserital.ttf) format(truetype);
 }
+@font-face {
+    font-family: Seria;
+    src: url(/Fuentes/IosevkaCharon-Regular.ttf) format(truetype);
+}
 body{
     background-color: #e9edc9;
     line-height: 1.6;
@@ -37,8 +41,9 @@ body{
 .navbar-pro{
     background-color: #34495e;
     padding: 1rem;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 10px 10px;
     margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .navbar-pro a{
     color: black;
@@ -54,15 +59,24 @@ nav ul
     flex-wrap: wrap;
     gap: 1rem;
 }
-nav ul li a
-{
-    color: black;
+nav ul li a{
+    display: inline-block;
+    color: whitesmoke;
+    background-color: #264653;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
+
+nav ul li a:hover{
+    background-color: #34495e;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .footer-pro{
     background-color: #212529;
     color: white;
@@ -82,9 +96,9 @@ a{
     color: coral;
     text-decoration: none;
 }
-a:hover{
-    color: goldenrod;
+p{
+    font-family: Seria;
 }
 a:visited{
-    color: red;
+    color: #219ebc;
 }
