@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header>
+            <h1>Pagina completa con html y css</h1>
+        </header>
+        <ul>
+            <li><a href="paginaCompleta.html"> Bordes</a></li>
+            <li><a href="sombras.html"> Sombras</a></li>
+            <li><a href="cajas.html"> Cajas</a></li>
+            <li><a href="Posicion.html"> Posicion</a></li>
+            <li><a href="transformacion.html"> Transformacion</a></li>
+            <li><a href="Formularios.html"> Formularios</a></li>
+            <li><a href="iframe.html">iframe</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Columnas.html">Columnas</a></li>
+            <li><a href="Video.html">Video</a></li>
+            <li><a href="Audio.hmtl">Audio</a></li>
+            <li><a href="Transparencias.html">Transparencias</a></li>
+            <li><a href="Animacion.html">Animacion</a></li>
+        </ul>
+    </nav>
+    <section class="estilo-pro">
+        <h2>Sombras</h2>
+        <article>
+            En HTML (específicamente mediante CSS), las sombras se pueden crear
+            utilizando la propiedad <strong>box-shadow</strong>. Esta propiedad
+            permite agregar una sombra a un elemento, lo que puede mejorar su apariencia
+            y darle un efecto de profundidad. La sintaxis básica de <strong>box-shadow</strong>
+            es la siguiente:
+        </article>
+        <p>
+            Los sombras se componen de:
+            <br><b>Horizontal:</b> se desplaza hacia los lados
+            <br><b>Vertical:</b> se desplaza hacia arriba o hacia abajo
+            <br><b>Desenfoque(blur):</b> se difumina la sombra
+            <br><b>Color:</b> se le asigna un color a la sombra
+            <br><b>Spread:</b> se expande o contrae la sombra
+        </p>
+        <p></p>
+        <h3>Ejemplos de box-shadow</h3>
+        <hr>
+        <div style="box-shadow: 5px 5px black; padding:10px; margin:10px;">
+            Sombra simple
+        </div>
+        <div style="box-shadow: 10px 10px 5px grey; padding:10px; margin:10px;">
+            Sombra con desenfoque
+        </div>
+        <div style="box-shadow: 15px 15px 10px 5px red; padding:10px; margin:10px;">
+            Sombra con spread
+        </div>
+        <div style="box-shadow: 20px 20px 15px 10px blue; padding:10px; margin:10px;">
+            Sombra con spread y desenfoque
+        </div>
+
+    </section>
+    <section class="estilo-pro">
+        <h2>sombras en texxto</h2>
+        <article>
+            <p>
+                Las sombras tambien se pueden aplicar a los textos
+                utilizando la propiedad <strong>text-shadow</strong>.
+            </p>
+            <h3>Ejemplo</h3>
+            <p style="text-shadow: 2px 2px black;">
+                texto con sombra simple
+            </p>
+            <p style="text-shadow: 2px 2px 5px gray;">
+                Texto con sombra desenfocada
+            </p>
+            <p style="text-shadow: 0px 0px 10px blue;">
+                texto con efecto de resplandor(brillo)
+            </p>
+        </article>
+    </section>
+    <section class="estilo-pro">
+        <article>
+            <h2>Ejemplo combinado</h2>
+            <div style="width: 300px; height: 100px; box-shadow: 5px 5px 15px rgba(0,0,0,0.5); padding:20px;">
+                caja con las sombras elegantes
+            </div>
+        </article>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-pro">
+
+        <div>
+
+
+            <div>
+                <h3>Contactame</h3>
+
+                <div>
+                    <i></i>
+                    <div>Correo: <a style="color :white" class="email"
+                            href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+                </div>
+                <div>
+                    <i></i>
+                    <span>+57 314 8040735</span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Ubicación</h4>
+                <p>Colegio Mayor del cauca sede bicentenario</p>
+            </div>
+
+            <div>
+
+                <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

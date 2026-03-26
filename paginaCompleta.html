@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Completa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+      <h1>Pagina completa con html y css</h1>
+    </header>
+    <ul>
+      <li><a href="paginaCompleta.html"> Bordes</a></li>
+      <li><a href="sombras.html"> Sombras</a></li>
+      <li><a href="cajas.html"> Cajas</a></li>
+      <li><a href="Posicion.html"> Posicion</a></li>
+      <li><a href="transformacion.html"> Transformacion</a></li>
+      <li><a href="Formularios.html"> Formularios</a></li>
+      <li><a href="iframe.html">iframe</a></li>
+      <li><a href="Transiciones.html">Transiciones</a></li>
+      <li><a href="Columnas.html">Columnas</a></li>
+      <li><a href="Video.html">Video</a></li>
+      <li><a href="Audio.html">Audio</a></li>
+      <li><a href="Transparencias.html">Transparencias</a></li>
+      <li><a href="Animacion.html">Animacion</a></li>
+    </ul>
+  </nav>
+  <section class="estilo-pro">
+    <h2>Bordes</h2>
+    <article>En HTML (específicamente mediante CSS), el borde es
+      una línea que rodea el contenido y el relleno (padding)
+      de un elemento. Sirve para delimitar visualmente el
+      espacio que ocupa un componente, como un botón, una
+      imagen o un cuadro de texto.</article>
+
+    <p>
+      los tipos de bordes existentes son:
+      <br><b>none:</b>sin borde
+      <br><b>solid:</b> borde sólido
+      <br><b>dotted:</b> borde punteado
+      <br><b>dashed:</b> borde discontinuo
+      <br><b>double:</b> borde doble
+      <br><b>groove:</b> borde con efecto de ranura
+      <br><b>ridge:</b> borde con efecto de cresta
+      <br><b>inset:</b> borde con efecto de incrustación
+      <br><b>outset:</b> borde con efecto de salida
+    </p>
+    <h3>ejemplo</h3>
+    <hr>
+    <div style="border: 3px solid black; padding:10px;">solid</div><br>
+    <div style="border: 3px dotted black; padding:10px;">dotted</div><br>
+    <div style="border: 3px dashed black; padding:10px;">dashed</div><br>
+    <div style="border: 5px double black; padding:10px;">double</div><br>
+    <div style="border: 5px groove black; padding:10px;">groove</div><br>
+    <div style="border: 5px ridge black; padding:10px;">ridge</div><br>
+    <div style="border: 5px inset black; padding:10px;">inset</div><br>
+    <div style="border: 5px outset black; padding:10px;">outset</div><br>
+  </section>
+  <section class="estilo-pro">
+    <h2>Lineas separadas verticales</h2>
+    <article>
+      <p>
+        para crear las lineas verticales se puede usar la propiedad CSS <b>border-left</b> o <b>border-right</b>
+      </p>
+      <h3>Ejemplo</h3>
+      <div style="border-left: 5px solid blue; padding:10px;">
+        Linea vertical izquierda
+      </div>
+      <div style="border-right: 5px solid green; padding:10px;">
+        Linea vertical derecha
+      </div>
+    </article>
+  </section>
+
+  <section class="estilo-pro">
+    <article>
+      <h2 id="borde_simple"> Borde simple</h2>
+      <div>
+        <p>
+          <b>width:300px</b><br>
+          <b>height:100px</b><br>
+          <b>border: 2px solid black</b><br>
+          <b>border-radius: 15px</b><br>
+        </p>
+      </div>
+      <div style="width: 300px; height: 100px; border: 2px solid black; border-radius: 15px;">
+        Borde simple con borde redondeado
+      </div>
+    </article>
+  </section>
+  <section class="estilo-pro">
+    <article>
+      <h2 id="borde_redondo">borde redondo</h2>
+      <div>
+        <p>
+          con la propiedad <b>border-radius</b> existe la posibilidad de crear elementos
+          con esquinas redondos, se puede controlar que tan curvas seran las esquinas
+        </p>
+      </div>
+      <p>
+        ejemplo circulo: 
+      </p>
+      <div style="width:200px; height:200px; border:4px solid green; border-radius: 50%;">
+        
+      </div>
+    </article>
+  </section>
+  <!-- Footer -->
+  <footer class="footer-pro">
+
+    <div>
+
+
+      <div>
+        <h3>Contactame</h3>
+
+        <div>
+          <i></i>
+          <div>Correo: <a style="color :white" class="email"
+              href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+        </div>
+        <div>
+          <i></i>
+          <span>+57 314 8040735</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Ubicación</h4>
+        <p>Colegio Mayor del cauca sede bicentenario</p>
+      </div>
+
+      <div>
+
+        <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

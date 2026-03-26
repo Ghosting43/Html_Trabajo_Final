@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+      <h1>Pagina completa con html y css</h1>
+    </header>
+    <ul>
+      <li><a href="paginaCompleta.html"> Bordes</a></li>
+      <li><a href="sombras.html"> Sombras</a></li>
+      <li><a href="cajas.html"> Cajas</a></li>
+      <li><a href="Posicion.html"> Posicion</a></li>
+      <li><a href="Transformacion.html"> Transformacion</a></li>
+      <li><a href="Formularios.html"> Formularios</a></li>
+      <li><a href="iframe.html">iframe</a></li>
+      <li><a href="Transiciones.html">Transiciones</a></li>
+      <li><a href="Columnas.html">Columnas</a></li>
+      <li><a href="Video.html">Video</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="Transparencias.html">Transparencias</a></li>
+      <li><a href="Animacion.html">Animacion</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="estilo-pro">
+    <h2>Audio en HTML</h2>
+
+    <article>
+      La etiqueta <b>&lt;audio&gt;</b> permite reproducir sonidos o música directamente en una página web.
+    </article>
+
+    <p>
+      Atributos principales:
+      <br><b>src:</b> ruta del audio
+      <br><b>controls:</b> muestra controles (play, pausa, volumen)
+      <br><b>autoplay:</b> reproduce automáticamente
+      <br><b>loop:</b> repite el audio
+      <br><b>muted:</b> sin sonido
+    </p>
+
+  </section>
+
+  <section class="estilo-pro">
+    <h2>Ejemplo básico</h2>
+    <hr>
+
+    <audio controls>
+      <source src="audios/Alo con Dorian_ (cheems).mp3" type="audio/mpeg">
+      El navegador no soporta el audio.
+    </audio>
+
+  </section>
+
+  <section class="estilo-pro">
+    <h2>Audio automático y en bucle</h2>
+
+    <article>
+
+      <audio autoplay loop muted>
+        <source src="audios/Quítate Eugenio!!.mp3" type="audio/mpeg">
+      </audio>
+
+    </article>
+  </section>
+
+  <section class="estilo-pro">
+    <article>
+      <h2>Controles adicionales</h2>
+
+      <p>
+        Puedes controlar el comportamiento del audio con atributos extra:
+      </p>
+
+      <audio controls preload="auto">
+        <source src="audios/Cuáles Discos_ Adrián y la viejita grosera.mp3" type="audio/mpeg">
+      </audio>
+
+      <p>
+        <b>preload:</b> indica si el audio se carga antes de reproducirse.
+      </p>
+
+    </article>
+  </section>
+
+  <section class="estilo-pro">
+    <article>
+      <h2>Ejemplo combinado</h2>
+
+      <audio controls loop>
+        <source src="audios/no vas a ir ni M13RD4!!.mp3" type="audio/mpeg">
+      </audio>
+
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-pro">
+    <div>
+      <div>
+        <h3>Contactame</h3>
+        <div>
+          <i></i>
+          <div>Correo: <a style="color :white" class="email"
+              href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+        </div>
+        <div>
+          <i></i>
+          <span class="">+57 314 8040735</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Ubicación</h4>
+        <p>Colegio Mayor del cauca sede bicentenario</p>
+      </div>
+      <div>
+        <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header>
+            <h1>Pagina completa con html y css</h1>
+        </header>
+        <ul>
+            <li><a href="paginaCompleta.html"> Bordes</a></li>
+            <li><a href="sombras.html"> Sombras</a></li>
+            <li><a href="cajas.html"> Cajas</a></li>
+            <li><a href="Posicion.html"> Posicion</a></li>
+            <li><a href="transformacion.html"> Transformacion</a></li>
+            <li><a href="Formularios.html"> Formularios</a></li>
+            <li><a href="iframe.html">iframe</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Columnas.html">Columnas</a></li>
+            <li><a href="Video.html">Video</a></li>
+            <li><a href="Audio.html">Audio</a></li>
+            <li><a href="Transparencias.html">Transparencias</a></li>
+            <li><a href="Animacion.html">Animacion</a></li>
+        </ul>
+    </nav>
+    <section class="estilo-pro">
+        <h2>Posición en CSS</h2>
+
+        <article>
+            La propiedad <b>position</b> en CSS permite controlar la ubicación de los elementos dentro de la página.
+        </article>
+
+        <p>
+            Los tipos de posición son:
+            <br><b>static:</b> posición por defecto
+            <br><b>relative:</b> se mueve respecto a su posición original
+            <br><b>absolute:</b> se posiciona respecto al contenedor padre
+            <br><b>fixed:</b> se fija en la pantalla
+            <br><b>sticky:</b> se comporta como relative y luego como fixed
+        </p>
+
+    </section>
+
+    <section class="estilo-pro">
+        <h2>Ejemplos</h2>
+        <hr>
+
+        <h3>Static (por defecto)</h3>
+        <div style="position: static; border:2px solid black; padding:10px;">
+            Elemento static
+        </div>
+
+        <h3>Relative</h3>
+        <div style="position: relative; left: 30px; border:2px solid blue; padding:10px;">
+            Elemento relative (movido 30px a la derecha)
+        </div>
+
+        <h3>Absolute</h3>
+        <div style="position: relative; height:150px; border:2px solid red;">
+            Contenedor padre
+            <div style="position: absolute; top: 20px; right: 20px; background: yellow; padding:10px;">
+                Elemento absolute
+            </div>
+        </div>
+
+        <h3>Sticky</h3>
+        <div style="position: sticky; top: 0; background: orange; padding:10px;">
+            Elemento sticky (se queda arriba al hacer scroll)
+        </div>
+
+    </section>
+
+    <section class="estilo-pro">
+        <article>
+            <h2>Propiedades adicionales</h2>
+
+            <p>
+                Para mover elementos posicionados se usan:
+            </p>
+
+            <br><b>top:</b> desde arriba
+            <br><b>bottom:</b> desde abajo
+            <br><b>left:</b> desde la izquierda
+            <br><b>right:</b> desde la derecha
+
+            <h3>Ejemplo</h3>
+
+            <div style="position: relative; height:150px; border:2px solid black;">
+                <div style="position: absolute; top: 10px; left: 10px; background: lightblue; padding:10px;">
+                    Arriba izquierda
+                </div>
+                <div style="position: absolute; bottom: 10px; right: 10px; background: lightcoral; padding:10px;">
+                    Abajo derecha
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section class="estilo-pro">
+        <article>
+            <h2>Ejemplo combinado</h2>
+
+            <div style="position: relative; width:300px; height:200px; border:3px solid black;">
+                Caja principal
+
+                <div style="position:absolute; top:20px; left:20px; background:yellow; padding:10px;">
+                    Caja 1
+                </div>
+
+                <div style="position:absolute; bottom:20px; right:20px; background:lightgreen; padding:10px;">
+                    Caja 2
+                </div>
+
+            </div>
+
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-pro">
+
+        <div>
+
+
+            <div>
+                <h3>Contactame</h3>
+
+                <div>
+                    <i></i>
+                    <div>Correo: <a style="color :white" class="email"
+                            href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+                </div>
+                <div>
+                    <i></i>
+                    <span>+57 314 8040735</span>
+                </div>
+            </div>
+
+            <div>
+                <h4>Ubicación</h4>
+                <p>Colegio Mayor del cauca sede bicentenario</p>
+            </div>
+
+            <div>
+
+                <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
