@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+      <h1>Pagina completa con html y css</h1>
+    </header>
+    <ul>
+      <li><a href="paginaCompleta.html"> Bordes</a></li>
+      <li><a href="sombras.html"> Sombras</a></li>
+      <li><a href="cajas.html"> Cajas</a></li>
+      <li><a href="Posicion.html"> Posicion</a></li>
+      <li><a href="transformacion.html"> Transformacion</a></li>
+      <li><a href="Formularios.html"> Formularios</a></li>
+      <li><a href="iframe.html">iframe</a></li>
+      <li><a href="Transiciones.html">Transiciones</a></li>
+      <li><a href="Columnas.html">Columnas</a></li>
+      <li><a href="Video.html">Video</a></li>
+      <li><a href="Audio.html">Audio</a></li>
+      <li><a href="Transparencias.html">Transparencias</a></li>
+      <li><a href="responsive.html">responsive</a></li>
+      <li><a href="storage.html">storage</a></li>
+    </ul>
+  </nav>
+<section class="estilo-pro">
+<h2>web storage</h2>
+<article>
+    web storage permite guardar información en el navegador del usuario
+    sin necesidad de una base de datos
+    se utilizan principalmente <b>localstorage</b> y <b>sessionStorage</b>
+</article>
+<p>
+    tipos de almacenamiento:
+    <br><b>localStorage:</b> almacena datos de forma permanente
+    <br><b>sessionStorage:</b> almacena datos de la sesion mientras la pestaña esta abierta
+</p>
+</section>
+<section class="estilo-pro">
+<h2>Guardar datos</h2>
+<hr>
+
+<input type="text" id="nombre" placeholder="Escriba el nombre suyo">
+<button onclick="guardar()">Guardar info</button>
+<script>
+    function guardar(){
+        const nombre = document.getElementById('nombre').value;
+        localStorage.setItem('nombre', nombre);
+        alert('nombre guardado');
+    }
+</script>
+</section>
+<section class="estilo-pro">
+<h2>obtener datos</h2>
+<article>
+    <button onclick="mostrar">mostrar namessss</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrar(){
+            const nombre = localStorage.getItem('nombre');
+            document.getElementById('resultado').textContent = 'el nombre guardado es:'+ nombre;
+        }
+    </script>
+    <section class="estilo-pro">
+<h2>eliminar datos</h2>
+<article>
+    <button onclick="eliminar">eliminar nombre</button>
+    <p id="resultado"></p>
+
+    <script>
+        function eliminar(){
+            localStorage.removeItem('nombre');
+            alert('nombre eliminado');
+        }
+    </script>
+    <section class="estilo-pro">
+<h2>Ejemplo con sessionStorage</h2>
+<article>
+    <input type="text" id="dato" placeholder="Escriba un dato temporal">
+    <button onclick="guardarSession">Guardar en session</button>
+    <button onclick="mostrarSession">Mostrar datos de session</button>
+    <p id="resultado"></p>
+
+    <script>
+        function guardarSession(){
+            const dato = document.getElementById('dato').value;
+            sessionStorage.setItem('dato', dato);
+            alert('dato guardado en session');
+        }
+
+        function mostrarSession(){
+            const dato = sessionStorage.getItem('dato');
+            document.getElementById('resultado').textContent = 'el dato guardado es:'+ dato;
+        }
+    </script>
+</article>
+</section>
+
+<!-- Footer -->
+  <footer class="footer-pro">
+
+    <div>
+
+
+      <div>
+        <h3>Contactame</h3>
+
+        <div>
+          <i></i>
+          <div>Correo: <a style="color :white" class="email"
+              href="mailto:jhonnyleiton@unimayor.edu.co">jhonnyleiton@unimayor.edu.co</a></div>
+        </div>
+        <div>
+          <i></i>
+          <span>+57 314 8040735</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Ubicación</h4>
+        <p>Colegio Mayor del cauca sede bicentenario</p>
+      </div>
+
+      <div>
+
+        <a href="https://wa.me/573148040735">HAZ TU PROXIMA CITA CONMIGO :D</a>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</html>
