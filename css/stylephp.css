@@ -1,0 +1,209 @@
+/* --- Variables de Color (Para que sea fácil de cambiar) --- */
+:root {
+    --primary: #003366;    /* Azul Institucional */
+    --accent: #3b82f6;     /* Azul Brillante */
+    --bg-body: #f1f5f9;    /* Gris muy claro */
+    --bg-card: #ffffff;    /* Blanco */
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+}
+
+/* --- Estilos Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- Header con Logo --- */
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 3rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* --- Menú de Navegación --- */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 1.2rem 1rem;
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+    background-color: #f8fafc;
+}
+
+nav ul li a.active {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+/* --- Sección de Contenido --- */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: var(--bg-card);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+section h2, section h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+    color: #475569;
+}
+
+/* --- Tabla --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table th {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table tr:hover {
+    background-color: #f8fafc;
+}
+
+/* --- Formulario --- */
+form {
+    display: grid;
+    gap: 1rem;
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* --- Botones --- */
+input[type="submit"], 
+input[type="reset"] {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #e2e8f0;
+    color: var(--text-main);
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    margin-top: 4rem;
+}
+
+footer p:last-child {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #94a3b8;
+}
