@@ -22,14 +22,14 @@
 <nav>
     <ul>
         <li><a href="inicio.php">Inicio</a></li>
-        <li><a href="Variables.php" class="active">Variables</a></li>
-        <li><a href="Formularios.php">Formularios</a></li>
-        <li><a href="Modelosia.php">Modelos IA</a></li>
-        <li><a href="ApiKey.php">Api key IA</a></li>
-        <li><a href="Condicionales.php">Condicionales</a></li>
-        <li><a href="Ciclos.php">Ciclos</a></li>
-        <li><a href="Funciones.php">Funciones</a></li>
-        <li><a href="BaseDatos.php">BaseDatos</a></li>
+        <li><a href="variables.php" class="active">Variables</a></li>
+        <li><a href="formularios.php">Formularios</a></li>
+        <li><a href="modelosia.php">Modelos IA</a></li>
+        <li><a href="apikey.php">Api key IA</a></li>
+        <li><a href="condicionales.php">Condicionales</a></li>
+        <li><a href="ciclos.php">Ciclos</a></li>
+        <li><a href="funciones.php">Funciones</a></li>
+        <li><a href="Bd.php">BaseDatos</a></li>
     </ul>
 </nav>
 
